@@ -1,4 +1,4 @@
-# (Replace_with_your_title) Cookbook
+# Bayesian Monte Carlo Markov Chain modelling Cookbook
 
 <img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
 
