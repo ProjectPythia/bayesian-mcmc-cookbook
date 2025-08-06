@@ -54,6 +54,6 @@ p(θ|y) ∝ p(θ) p(y|θ)
 
 #### Key Properties
 
-- The sequence \( \{ \theta^{(t)} \} \) forms a Markov chain whose stationary distribution is the target distribution \( p(\theta) \).
-- The algorithm only requires the target distribution to be known up to a normalizing constant.
-- After discarding an initial "burn-in" period, the remaining samples can be used to make inferences on parameter posterior distributions.
+- The sequence of theta^(t) forms a Markov chain whose stationary distribution is the target distribution p(theta).
+- The algorithm only requires knowing the target distribution up to a normalizing constant.
+- After discarding an initial "burn-in" period, the remaining samples can be used to make inferences about the posterior distributions of the parameters.
