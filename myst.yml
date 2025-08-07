@@ -1,4 +1,5 @@
 # See docs at: https://mystmd.org/guide/frontmatter
+project:  
   title: A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch
   github: https://github.com/matheusbarrosb/bayesian-mcmc-cookbook/blob/dev/myst.yml
   authors:
