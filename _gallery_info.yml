@@ -10,3 +10,4 @@ tags:
       - scipy
       - matplotlib
       - pandas
+      - numba
