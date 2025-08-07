@@ -3,4 +3,10 @@ tags:
   domains:
     - sampledomain
   packages:
-    - samplepackage
+      - jupyterlab
+      - mystmd
+      - jupyterlab-myst
+      - numpy
+      - scipy
+      - matplotlib
+      - pandas
