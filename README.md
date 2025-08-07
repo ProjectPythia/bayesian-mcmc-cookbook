@@ -1,6 +1,6 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
 
-<img src="thumbnail.png" width="300"
+<img src="thumbnail.png" width="300"/>
 
 ## Motivation
 
