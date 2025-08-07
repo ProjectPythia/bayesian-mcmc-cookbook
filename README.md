@@ -1,5 +1,7 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
 
+<img src="thumbnail.png" width="300"
+
 ## Motivation
 
 While there are many dedicated packages to perform Bayesian estimation, it might be very useful to understand what's under the hood, so scientists and students are increasingly knowledgeable and empowered to make the best modelling decisions. This cookbook is an effort to demonstrate how Monte Carlo Markov Chain (MCMC) algorithms play a role in Bayesian estimation. I have included several applications of this algorithm to different models - starting from estimating basic normal distribution parameters and regressions, all the way to more complex population dynamics models.
