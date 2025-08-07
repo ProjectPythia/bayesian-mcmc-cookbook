@@ -1,8 +1,8 @@
 # See docs at: https://mystmd.org/guide/frontmatter
   title: A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch
   github: https://github.com/matheusbarrosb/bayesian-mcmc-cookbook/blob/dev/myst.yml
-  authors: Matheus de Barros
-    - name: The Project Pythia Community
+  authors:
+    - name: Matheus de Barros
   copyright: '2024'
   toc:
     - file: README.md
