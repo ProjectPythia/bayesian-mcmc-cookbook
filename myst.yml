@@ -19,7 +19,6 @@ project:
         - file: notebooks/non_standard_normal.ipynb
         - file: notebooks/logit_mcmc.ipynb
         - file: notebooks/poisson_mcmc.ipynb
-        - file: notebooks/poisson_mcmc.ipynb
         - file: notebooks/schaefer_spm_mcmc.ipynb
   jupyter:
       binder:
