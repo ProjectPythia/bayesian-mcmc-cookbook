@@ -1,1 +1,0 @@
-import{a}from"/bayesian-mcmc-cookbook/_preview/4/build/_shared/chunk-ZJWNTTCK.js";import"/bayesian-mcmc-cookbook/_preview/4/build/_shared/chunk-7H4MNJGC.js";import"/bayesian-mcmc-cookbook/_preview/4/build/_shared/chunk-2NH4LW52.js";export default a();
