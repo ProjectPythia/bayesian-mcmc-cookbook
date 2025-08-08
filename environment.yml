@@ -10,6 +10,4 @@ dependencies:
   - matplotlib
   - pandas
   - numba
- # - myst
-  - mystmd
   - statsmodels
