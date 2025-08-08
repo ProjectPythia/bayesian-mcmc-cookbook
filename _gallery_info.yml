@@ -11,3 +11,6 @@ tags:
       - matplotlib
       - pandas
       - numba
+      - myst
+      - mystmd
+      
