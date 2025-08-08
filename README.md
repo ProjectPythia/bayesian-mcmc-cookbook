@@ -1,90 +1,56 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
 
-<img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
-
-[![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
-[![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
-
-_See the [Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide) for step-by-step instructions on how to create your new Cookbook and get it hosted on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org)!_
-
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
+<img src="thumbnail.png" width="300"/>
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+While there are many dedicated packages to perform Bayesian estimation, it might be very useful to understand what's under the hood, so scientists and students are increasingly knowledgeable and empowered to make the best modelling decisions. This cookbook is an effort to demonstrate how Monte Carlo Markov Chain (MCMC) algorithms play a role in Bayesian estimation. I have included several applications of this algorithm to different models - starting from estimating basic normal distribution parameters and regressions, all the way to more complex population dynamics models.
 
 ## Authors
 
-[First Author](https://github.com/first-author1), [Second Author](https://github.com/second-author2), etc. _Acknowledge primary content authors here_
+[Matheus de Barros](https://github.com/matheusbarrosb)
 
-### Contributors
+### Background
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
-</a>
+#### Bayes' rule and probability statements
 
-## Structure
+### Bayes' Rule and Probability Statements
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+In Bayesian models, the goal is to estimate the posterior distribution given a prior distribution p(θ) (what we already know about the parameters), and the likelihood p(y|θ) (the probability of observing the data y given parameter values θ).
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+To estimate model parameters θ given data y, we specify the joint probability distribution:
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+p(y, θ) = p(y|θ) p(θ)
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+Applying Bayes' rule:
 
-(Add content for this section, e.g., "Example workflows include ... ")
+p(θ|y) = [p(y|θ) p(θ)] / p(y)
 
-## Running the Notebooks
+where p(y) = ∫ p(y|θ) p(θ) dθ is the marginal likelihood (normalizing constant).
 
-You can either run the notebook using [Binder](https://binder.projectpythia.org/) or on your local machine.
+The unnormalized posterior can be written as:
 
-### Running on Binder
+p(θ|y) ∝ p(θ) p(y|θ)
 
-The simplest way to interact with a Jupyter Notebook is through
-[Binder](https://binder.projectpythia.org/), which enables the execution of a
-[Jupyter Book](https://jupyterbook.org) in the cloud. The details of how this works are not
-important for now. All you need to know is how to launch a Pythia
-Cookbooks chapter via Binder. Simply navigate your mouse to
-the top right corner of the book chapter you are viewing and click
-on the rocket ship icon, (see figure below), and be sure to select
-“launch Binder”. After a moment you should be presented with a
-notebook that you can interact with. I.e. you’ll be able to execute
-and even change the example programs. You’ll see that the code cells
-have no output at first, until you execute them by pressing
-{kbd}`Shift`\+{kbd}`Enter`. Complete details on how to interact with
-a live Jupyter notebook are described in [Getting Started with
-Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter).
+---
 
-Note, not all Cookbook chapters are executable. If you do not see
-the rocket ship icon, such as on this page, you are not viewing an
-executable book chapter.
+#### The Metropolis-Hastings Algorithm
 
+**Steps:**
 
-### Running on Your Own Machine
+1. **Initialization:** Start with an initial value θ(0).
+2. **Proposal:** At iteration t, propose θ* from q(θ* | θ(t-1)).
+3. **Acceptance Ratio:** Compute
 
-If you are interested in running this material locally on your computer, you will need to follow this workflow:
+   α = min(1, [p(θ*) q(θ(t-1)|θ*)] / [p(θ(t-1)) q(θ*|θ(t-1))])
 
-(Replace "cookbook-example" with the title of your cookbooks)
+4. **Accept or Reject:** Draw u ~ Uniform(0,1).
+   - If u < α, set θ(t) = θ*.
+   - Else, θ(t) = θ(t-1).
+5. **Iterate:** Repeat steps 2–4 as needed.
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+**Key Properties:**
+- The sequence {θ(t)} forms a Markov chain with stationary distribution p(θ).
+- Only the unnormalized target distribution is needed.
+- After burn-in, use remaining samples for posterior inference.
 
-   ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
-   ```
-
-1. Move into the `cookbook-example` directory
-   ```bash
-   cd cookbook-example
-   ```
-1. Create and activate your conda environment from the `environment.yml` file
-   ```bash
-   conda env create -f environment.yml
-   conda activate cookbook-example
-   ```
-1. Move into the `notebooks` directory and start up Jupyterlab
-   ```bash
-   cd notebooks/
-   jupyter lab
-   ```

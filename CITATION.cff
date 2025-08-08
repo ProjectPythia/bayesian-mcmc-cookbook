@@ -1,12 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this cookbook, please cite it as below."
 authors:
-  # add additional entries for each author -- see https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
-  - family-names: Rose
-    given-names: Brian E. J.
+  - family-names: de Barros
+    given-names: Matheus
     orcid: https://orcid.org/0000-0002-8829-1417
     website: https://github.com/matheusbarrosb
     affiliation: School of Aquatic and Fishery Sciences, University of Washington Seattle Campus
-  - name: "Bayesian Monte Carlo Markov Chain cookbook"
-
+title: "A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch"
  
