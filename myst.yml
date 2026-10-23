@@ -3,7 +3,7 @@ version: 1
 extends:
 - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch
+  title: Bayesian Monte Carlo Markov Chain modelling Cookbook
   github: https://github.com/matheusbarrosb/bayesian-mcmc-cookbook/blob/dev/myst.yml
   authors:
     - name: Matheus de Barros
