@@ -1,10 +1,18 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
+A cookbook to explore Monte Carlo Markov algorithms (MCMC) and Bayesian estimation
 
 <img src="thumbnail.png" width="300"/>
+
+[![nightly-build](https://github.com/ProjectPythia/bayesian-mcmc-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/bayesian-mcmc-cookbook/actions/workflows/nightly-build.yaml)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/bayesian-mcmc-cookbook/main?labpath=notebooks)
+[![DOI](https://zenodo.org/badge/813804649.svg)](https://zenodo.org/badge/latestdoi/813804649)
 
 ## Motivation
 
 While there are many dedicated packages to perform Bayesian estimation, it might be very useful to understand what's under the hood, so scientists and students are increasingly knowledgeable and empowered to make the best modelling decisions. This cookbook is an effort to demonstrate how Monte Carlo Markov Chain (MCMC) algorithms play a role in Bayesian estimation. I have included several applications of this algorithm to different models - starting from estimating basic normal distribution parameters and regressions, all the way to more complex population dynamics models.
+
+> [!NOTE]
+> This cookbook is a work in progress and is actively under construction
 
 ## Authors
 
