@@ -1,5 +1,5 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
-A cookbook to explore Monte Carlo Markov algorithms (MCMC) and Bayesian estimation
+A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch
 
 <img src="thumbnail.png" width="300"/>
 
