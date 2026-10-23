@@ -1,5 +1,5 @@
 # Bayesian Monte Carlo Markov Chain modelling Cookbook
-A cookbook to explore how Monte Carlo Markov algorithms (MCMC) and Bayesian estimation
+A cookbook to explore Monte Carlo Markov algorithms (MCMC) and Bayesian estimation
 
 <img src="thumbnail.png" width="300"/>
 
