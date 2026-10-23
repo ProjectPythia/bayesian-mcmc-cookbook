@@ -5,7 +5,7 @@ A cookbook to explore Monte Carlo Markov algorithms (MCMC) and Bayesian estimati
 
 [![nightly-build](https://github.com/ProjectPythia/bayesian-mcmc-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/bayesian-mcmc-cookbook/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/bayesian-mcmc-cookbook/main?labpath=notebooks)
-[![DOI](https://zenodo.org/badge/813804649.svg)](https://zenodo.org/badge/latestdoi/813804649)
+[![DOI](https://zenodo.org/badge/1032751633.svg)](https://doi.org/10.5281/zenodo.23584844)
 
 ## Motivation
 
