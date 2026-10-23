@@ -1,7 +1,8 @@
 thumbnail: thumbnail.png
 tags:
   domains:
-    - sampledomain
+    - statistics
+    - wip
   packages:
       - jupyterlab
       - mystmd
