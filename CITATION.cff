@@ -7,4 +7,7 @@ authors:
     website: https://github.com/matheusbarrosb
     affiliation: School of Aquatic and Fishery Sciences, University of Washington Seattle Campus
 title: "A guide to coding Bayesian Metropolis Hastings Monte Carlo Markov Chain algorithms from scratch"
+doi: 10.5281/zenodo.23584844
+repository-code: https://github.com/ProjectPythia/bayesian-mcmc-cookbook
+license: Apache-2.0
  
