@@ -4,14 +4,8 @@ tags:
     - statistics
     - wip
   packages:
-      - jupyterlab
-      - mystmd
-      - jupyterlab-myst
       - numpy
       - scipy
       - matplotlib
       - pandas
-      - numba
-      - myst
-      - mystmd
-      
+      - statsmodels
